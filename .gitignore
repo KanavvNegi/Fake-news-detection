@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+db.sqlite3
+Fake.csv
+True.csv
+manual_testing2.csv
+**/manual_testing2.csv
+data/*.zip
+*.zip
+.DS_Store

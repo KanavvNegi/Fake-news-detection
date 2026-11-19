@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project.com</title>
+    <script src="https://kit.fontawesome.com/a8a52c9794.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% include  "frontend/header.html" %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include  "frontend/footer.html" %}
+</body>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("header2").style.transition = "all 1s";
+    document.getElementById("header2").style.background = "white";
+    document.getElementById("header2").style.boxShadow  = "0px 15px 10px -15px #111";
+    
+  } else {
+    document.getElementById("header2").style.background = "transparent";
+    document.getElementById("header2").style.boxShadow  = "unset";
+  }
+}
+    </script>
+</html>

@@ -1,0 +1,26 @@
+1. please used python 3.7.0 in your system.
+   download python 3.7.0
+   After download click on python download file and install check the add to path option then install python
+   open powershell and check python version (python --version)
+   python : 3.7.0
+
+3. Go to Your Project Folder where manage.py file and copy path and past on your power sell.
+(cd pathname)  Tab Enter button
+
+4. install packages on command on powershell
+pip install requirements.txt
+
+4. run your project on powershell command.
+   python manage.py runserver
+
+5. copy server name like : 
+http://127.0.0.1:8000/
+
+6. paste on your browser.
+
+7. After run website clickon project.
+
+8. In your project folder have two files true.csv and fake.csv
+copy the news from your csv file and paste on brower website in input field
+
+9. This project created by A2itsoft.com

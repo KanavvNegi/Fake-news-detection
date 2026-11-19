@@ -1,0 +1,41 @@
+{% extends "frontend/base.html" %}
+{% block content %}
+{% load static %}
+<style>
+    p.newsresult {
+    color: red;
+    font-size: 30px;
+    padding: 0px;
+    margin-left: -2%;
+    font-weight: 900;
+}
+</style>
+<!-- main slide start -->
+<div class="container" style="margin:10%; margin-bottom:2%;">
+    <div class="row" style="border:1px solid lightgray; padding-top:30px; padding-left:30px; padding-right:30px;">
+<form action="../faksubmit/" method="post">
+    {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1">Enter Your News</label>
+    <textarea class="form-control" rows="7" name="textarea" placeholder="{% for item2 in context.textarea %} {{item2}} {% endfor %}"></textarea>
+    <small id="emailHelp" class="form-text text-muted">Please Enter Your news and detect News</small><br>
+  </div>
+  <div class="form-group form-check">
+     
+    <!-- {% if messages %}
+            {% for message in messages %}
+            <label style="list-style:none; margin-left:-25px">{{ message }}</label>
+            {% endfor %}
+    {% endif %} -->
+
+    {% for item in context.listdata %} 
+      <p class="newsresult"> {{item}} </p>
+    {% endfor %} 
+    
+  </div>
+  <p class="text-center"><button type="submit" class="btn btn-primary">Detect Your News</button></p>
+</form>
+  </div>
+  </div>
+  
+{% endblock %}
