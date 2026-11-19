@@ -8,7 +8,7 @@ A Django web app that classifies a pasted news article as **Fake** or **True** u
 
 ## Setup
 ```bash
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/KanavvNegi/Fake-news-detection.git
 cd <repo-name>
 python -m venv venv
 venv\Scripts\activate        # Windows  (Mac/Linux: source venv/bin/activate)
@@ -32,4 +32,4 @@ Open http://127.0.0.1:8000/ and paste a news article into the input field.
 ## Project structure
 - `main2.ipynb` - data cleaning, training, evaluation
 - `website/` - Django project (`mainapp/` holds views and the saved model)
-- `images/`, `website/` screenshots - documentation images
+- `images/`, “website/Capture*.PNG - screenshots of the app”
